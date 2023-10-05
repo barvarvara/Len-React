@@ -1,0 +1,14 @@
+@import "../../theme/colors";
+
+.logo {
+  display: block;
+  width: 80px;
+  height: 80px;
+  content: "";
+
+  background: $color-logo;
+
+  mask-image: url("../../assets/imgs/logo/len_ceramic2_02.png");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}

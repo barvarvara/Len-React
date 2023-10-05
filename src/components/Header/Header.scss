@@ -1,0 +1,83 @@
+@import "../../theme/colors";
+
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+  li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+
+.header__nav-link {
+  text-decoration: none;
+  color: $color-text-main;
+  white-space: nowrap;
+}
+
+.header__nav-link_dropdown::after {
+  vertical-align: middle;
+  content: "";
+  display: inline-block;
+
+  background: $color-text-main;
+  width: 16px;
+  height: 12px;
+  mask-image: url("../../assets/icons/arrows/list-arrow.svg");
+  mask-repeat: no-repeat;
+}
+
+.header__dropdown-container {
+  margin-top: 8px;
+}
+
+.header__dropdown-menu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  overflow: auto;
+  background-color: $color-bg-lighter;
+  padding: 16px;
+
+  a {
+    color: $color-text-main;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-text-main-dark);
+  }
+
+  li + li {
+    padding-top: 16px;
+  }
+}
+
+.header__dropdown:hover .header__dropdown-menu {
+  display: inline-block;
+}
+
+.header__user-icon {
+  content: "";
+  display: block;
+  height: 32px;
+  width: 32px;
+
+  background: $color-text-main;
+  background-size: 40px 40px;
+
+  mask-image: url("../../assets/icons/user-svg/user-minimalizm.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
