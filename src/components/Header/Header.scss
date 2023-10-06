@@ -1,5 +1,12 @@
 @import "../../theme/colors";
 
+.container-header {
+  padding-left: 128px;
+  padding-right: 128px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -36,6 +43,8 @@ header {
   height: 12px;
   mask-image: url("../../assets/icons/arrows/list-arrow.svg");
   mask-repeat: no-repeat;
+
+  margin-left: 4px;
 }
 
 .header__dropdown-container {
@@ -53,10 +62,10 @@ header {
   a {
     color: $color-text-main;
     text-decoration: none;
-  }
 
-  a:hover {
-    color: var(--color-text-main-dark);
+    &:hover {
+      color: $color-text-main-dark;
+    }
   }
 
   li + li {
@@ -80,4 +89,42 @@ header {
   mask-image: url("../../assets/icons/user-svg/user-minimalizm.svg");
   mask-repeat: no-repeat;
   mask-size: contain;
+}
+
+@media (max-width: 992px) {
+  .container-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .header__user-icon {
+    height: 16px;
+    width: 32px;
+  }
+
+  .header__dropdown-container {
+    margin-top: 4px;
+  }
+
+  .header__nav li {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    font-size: 0.6rem;
+  }
+
+  .header__nav-link_dropdown::after {
+    width: 8px;
+    height: 8px;
+  }
+
+  .header__dropdown-menu {
+    padding: 8px;
+  }
 }
