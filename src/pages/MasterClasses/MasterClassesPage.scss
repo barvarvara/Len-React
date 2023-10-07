@@ -5,21 +5,21 @@
   src: url("../../../../lab2/src/assets/fonts/ardeco/Ardeco.ttf") format("truetype");
 }
 
-h1 {
+.container-title {
   font-size: 58px;
   font-weight: 100;
   text-align: center;
   margin-top: 64px;
 }
 
-h2 {
-  font-size: 32px;
-  font-weight: 100;
-  margin-bottom: 48px;
-}
-
-.container {
+.masterclasses-container {
   padding: 64px 128px;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 48px;
+  }
 }
 
 .container-title {
@@ -48,28 +48,24 @@ h2 {
 
 
 @media (max-width: 992px) {
-  .container, .container-title {
+  .masterclasses-container, .container-title {
     padding-left: 32px;
     padding-right: 32px;
   }
 
-  h1 {
+  .container-title {
     margin-top: 32px;
   }
 }
 
 @media (max-width: 768px) {
-  h1 {
+  .container-title {
     font-size: 48px;
-  }
-
-  .card {
-    max-width: 100%;
   }
 }
 
 @media (max-width: 576px) {
-  h1 {
+  .container-title {
     font-size: 42px;
     /*letter-spacing: -1.25px;*/
   }

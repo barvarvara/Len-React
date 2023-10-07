@@ -16,7 +16,7 @@ export default function Masterclass() {
 
       <h1 className="container-title">Мастер-классы и мероприятия</h1>
 
-      <section className="masterclassNamees container">
+      <section className="masterclasses-container">
         <h2>Мастер-классы (свободная лепка)</h2>
 
         <div className="cards">
@@ -35,7 +35,7 @@ export default function Masterclass() {
         </div>
       </section>
 
-      <section className="kids container">
+      <section className="kids masterclasses-container">
         <h2>Детское время</h2>
 
         <div className="cards">
@@ -53,7 +53,7 @@ export default function Masterclass() {
         </div>
       </section>
 
-      <section className="container">
+      <section className="masterclasses-container">
         <h2>Мероприятия</h2>
 
         <div className="cards">

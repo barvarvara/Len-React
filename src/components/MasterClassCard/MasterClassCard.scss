@@ -29,7 +29,7 @@
     border: solid 1px $color-logo;
 
     &:hover {
-      background-color: $color-text-main-op;
+      background-color: $color-logo;
       color: $color-bg;
     }
   }
@@ -40,5 +40,11 @@
     flex-direction: column;
     row-gap: 32px;
     font-weight: 300;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
   }
 }
